@@ -1,14 +1,12 @@
-// import static org.junit.jupiter.api.Assertions.assertEquals;
-
-// import org.junit.jupiter.api.Test;
-
 public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
+  public static void main(String[] args){
+    int steps = 5;  // Wysokość 
 
-  // @Test
-  // void addition() {
-  //     assertEquals(2, 1 + 1);
-  // }
+    for(int i = 1; i <= steps; i++) {
+      for(int j = 1; j <= i; j++) {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+  }
 }
